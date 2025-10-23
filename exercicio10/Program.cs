@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-
-int opcao;
+﻿int opcao;
 
 do
 {
@@ -57,7 +55,7 @@ do
     {
         Console.WriteLine("Voce saiu do menu");
         Console.WriteLine("Digite uma tecla para retornar");
-        Console.ReadKey();
+        Console.Read();
     }
 
 } while (opcao != 0);
