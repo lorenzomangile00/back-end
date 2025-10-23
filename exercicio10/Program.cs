@@ -17,7 +17,7 @@ do
     Console.WriteLine("");
     Console.WriteLine("Digite o exercicio que deseja realizar:");
 
-    if (!int.TryParse(Console.ReadLine(), out opcao))
+    if (int.TryParse(Console.ReadLine(), out opcao))
     {
         Console.WriteLine("Numero invalido");
         continue;
@@ -61,7 +61,6 @@ do
 } while (opcao != 0);
 
 
-// --- Funções de cada exercício ---
 
 void Exercicio1()
 {
@@ -201,12 +200,12 @@ void Exercicio6()
         }
 }
 
-static void Sair()
+ void Sair()
 {
     Console.WriteLine("Saindo do menu...");
 }
 
-static void OpcaoInvalida()
+void OpcaoInvalida()
 {
     Console.WriteLine("Opção invalida.");
 }

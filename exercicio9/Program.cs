@@ -16,7 +16,7 @@ do
     Console.Write("Digite sua opção: ");
     opcao = int.Parse(Console.ReadLine());
 
-    if (!int.TryParse(Console.ReadLine(), out opcao))
+    if (int.TryParse(Console.ReadLine(), out opcao))
     {
         Console.WriteLine("Numero invalido");
         continue;
